@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Salman | Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+        font-family: "Inter", "Hind Siliguri", sans-serif;
+      }
+
+      .profile-ring {
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+        padding: 4px;
+        border-radius: 9999px;
+        transition: transform 0.3s ease;
+      }
+
+      .profile-ring:hover {
+        transform: scale(1.04);
+      }
+
+      .skill-card {
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .skill-card:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 10px 25px -5px rgba(59, 130, 246, 0.15),
+          0 8px 10px -6px rgba(59, 130, 246, 0.1);
+        border-color: #93c5fd;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white"
+  >
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80"
+    >
+      <div
+        class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between"
+      >
+        <a href="#" class="text-xl font-bold tracking-tight text-slate-900">
+          Salman<span class="text-blue-600">.</span>
+        </a>
+
+        <nav
+          class="flex items-center space-x-6 text-sm font-medium text-slate-600"
+        >
+          <a href="#about" class="hover:text-blue-600 transition-colors"
+            >আমার সম্পর্কে</a
+          >
+          <a href="#skills" class="hover:text-blue-600 transition-colors"
+            >দক্ষতা (Skills)</a
+          >
+          <a
+            href="#contact"
+            class="px-4 py-2 rounded-full bg-slate-900 text-white hover:bg-blue-600 transition-colors"
+          >
+            যোগাযোগ
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-20 space-y-20">
+      <section class="flex flex-col items-center text-center space-y-6">
+        <div class="profile-ring shadow-lg">
+          <img
+            src="./src/2.jpeg"
+            alt="Salman Profile Picture"
+            class="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover bg-white border-4 border-white"
+          />
+        </div>
+
+        <div class="space-y-3 max-w-xl">
+          <span
+            class="inline-block px-3.5 py-1 text-xs font-semibold tracking-wide text-blue-700 bg-blue-50 border border-blue-200 rounded-full"
+          >
+            👋 স্বাগতম আমার পোর্টফোলিওতে
+          </span>
+
+          <h1
+            class="text-3xl sm:text-5xl font-bold text-slate-900 tracking-tight"
+          >
+            আমি <span class="text-blue-600">Salman</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl font-medium text-slate-600">
+            Web Developer &amp; CSE Student
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 pt-2">
+          <a
+            href="#skills"
+            class="px-6 py-2.5 rounded-xl bg-blue-600 text-white font-medium text-sm shadow-sm hover:bg-blue-700 transition-all"
+          >
+            আমার দক্ষতাসমূহ দেখুন
+          </a>
+          <a
+            href="#about"
+            class="px-6 py-2.5 rounded-xl bg-white text-slate-700 border border-slate-200 font-medium text-sm hover:bg-slate-100 transition-all"
+          >
+            বিস্তারিত জানুন
+          </a>
+        </div>
+      </section>
+      <section id="about" class="scroll-mt-24">
+        <div
+          class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80"
+        >
+          <div class="flex items-center gap-3 mb-5">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-lg"
+            >
+              👤
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">আমার সম্পর্কে</h2>
+              <p
+                class="text-xs font-medium text-slate-400 uppercase tracking-wider"
+              >
+                About Me
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="space-y-4 text-slate-600 leading-relaxed text-base sm:text-lg"
+          >
+            <p>
+              আসসালামু আলাইকুম! আমি
+              <strong class="text-slate-800">Salman</strong>। আমি একজন উৎসাহী
+              ওয়েব ডেভেলপার এবং কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং (CSE)
+              বিভাগের শিক্ষার্থী। নতুন প্রযুক্তি শেখা এবং পরিচ্ছন্ন ও
+              ইউজার-ফ্রেন্ডলি ওয়েবসাইট তৈরি করতে আমি ভালোবাসি।
+            </p>
+            <p>
+              বর্তমানে আমি ফ্রন্টএন্ড এবং ব্যাকএন্ড ওয়েব ডেভেলপমেন্ট নিয়ে কাজ
+              করছি। আমার লক্ষ্য হলো বাস্তব জীবনের সমস্যার সমাধান করে এমন আধুনিক
+              ও কার্যকরী সফটওয়্যার এবং ওয়েব অ্যাপ্লিকেশন তৈরি করা।
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-slate-100"
+          >
+            <div class="p-3.5 rounded-2xl bg-slate-50">
+              <span class="block text-xs text-slate-400 font-medium"
+                >ঠিকানা (Location)</span
+              >
+              <span class="font-semibold text-slate-800 text-sm mt-0.5 block"
+                >ঢাকা, বাংলাদেশ</span
+              >
+            </div>
+            <div class="p-3.5 rounded-2xl bg-slate-50">
+              <span class="block text-xs text-slate-400 font-medium"
+                >পড়াশোনা (Education)</span
+              >
+              <span class="font-semibold text-slate-800 text-sm mt-0.5 block"
+                >B.Sc. in CSE</span
+              >
+            </div>
+            <div class="p-3.5 rounded-2xl bg-slate-50">
+              <span class="block text-xs text-slate-400 font-medium"
+                >আগ্রহ (Interests)</span
+              >
+              <span class="font-semibold text-slate-800 text-sm mt-0.5 block"
+                >Web Design, Problem Solving</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="scroll-mt-24">
+        <div
+          class="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-2"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-lg"
+            >
+              ⚡
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">আমার দক্ষতাসমূহ</h2>
+              <p
+                class="text-xs font-medium text-slate-400 uppercase tracking-wider"
+              >
+                My Skills &amp; Technologies
+              </p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500">
+            যেসব প্রযুক্তি ও টুলস নিয়ে আমি কাজ করি
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Skill 1: HTML5 -->
+          <div
+            class="skill-card bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center font-bold text-sm"
+                >
+                  &lt;/&gt;
+                </span>
+                <h3 class="font-bold text-slate-800">HTML5</h3>
+              </div>
+              <span class="text-xs font-semibold text-slate-500">95%</span>
+            </div>
+            <!-- Pure CSS Progress Bar -->
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-orange-500 h-full rounded-full"
+                style="width: 95%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS3 -->
+          <div
+            class="skill-card bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm"
+                >
+                  #
+                </span>
+                <h3 class="font-bold text-slate-800">CSS3 &amp; Tailwind</h3>
+              </div>
+              <span class="text-xs font-semibold text-slate-500">90%</span>
+            </div>
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-blue-500 h-full rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Skill 3: JavaScript -->
+          <div
+            class="skill-card bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-9 h-9 rounded-lg bg-yellow-50 text-yellow-600 flex items-center justify-center font-bold text-sm"
+                >
+                  JS
+                </span>
+                <h3 class="font-bold text-slate-800">JavaScript</h3>
+              </div>
+              <span class="text-xs font-semibold text-slate-500">80%</span>
+            </div>
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-yellow-500 h-full rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Skill 4: C / C++ -->
+          <div
+            class="skill-card bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm"
+                >
+                  C++
+                </span>
+                <h3 class="font-bold text-slate-800">C / C++</h3>
+              </div>
+              <span class="text-xs font-semibold text-slate-500">85%</span>
+            </div>
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-indigo-500 h-full rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Python -->
+          <div
+            class="skill-card bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm"
+                >
+                  PY
+                </span>
+                <h3 class="font-bold text-slate-800">Python</h3>
+              </div>
+              <span class="text-xs font-semibold text-slate-500">75%</span>
+            </div>
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-emerald-500 h-full rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Git & GitHub -->
+          <div
+            class="skill-card bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-sm"
+                >
+                  Git
+                </span>
+                <h3 class="font-bold text-slate-800">Git &amp; GitHub</h3>
+              </div>
+              <span class="text-xs font-semibold text-slate-500">85%</span>
+            </div>
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-slate-700 h-full rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-24">
+        <div
+          class="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 text-center space-y-4 shadow-md"
+        >
+          <h2 class="text-2xl sm:text-3xl font-bold">একসাথে কাজ করতে চান?</h2>
+          <p class="text-slate-300 max-w-md mx-auto text-sm sm:text-base">
+            যেকোনো প্রজেক্ট বা মতামতের জন্য নিচের ইমেইল অথবা সোশ্যাল মিডিয়ার
+            মাধ্যমে আমার সাথে যোগাযোগ করতে পারেন।
+          </p>
+
+          <div class="pt-3 flex flex-wrap justify-center gap-3">
+            <a
+              href="mailto:saalmansourav111@gmail.com"
+              class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-colors"
+            >
+              ✉️ ইমেইল পাঠান
+            </a>
+            <a
+              href="https://github.com/saalmansourav6122"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-sm transition-colors"
+            >
+              GitHub প্রোফাইল
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-500"
+    >
+      <p>© ২০২৬ Salman. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+  </body>
+</html>
